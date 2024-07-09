@@ -81,7 +81,7 @@ void apresentarPergunta(Pergunta *pergunta)
     }
 }
 
-void guardarJogo(char *vencedor)
+void guardarJogo(Jogadores *jogador, char *vencedor)
 {
     FILE *ficheiro = fopen("dados/jogos.txt", "a");
 
@@ -97,9 +97,8 @@ void guardarJogo(char *vencedor)
 
     strftime(data_string, sizeof(data_string), "%d-%m-%Y", data_atual);
     fprintf(ficheiro, "Data: %s\n", data_string);
-    fprintf(ficheiro, "Vencedor: %s\n\n", vencedor);
-    //GUADAR OS USERS DOS JOGADORES COM AS PONTUACOES DE CADA UM
-    //MOSTRAR A PONTUACAO TOTAL DO JOGO (SOMATORIO DAS PONTUACOES DE TODOS OS PLAYERS)
+    fprintf(ficheiro, "Vencedor: %s\n", vencedor);
+    fprintf(ficheiro, "Pontuacao total de todos os jogadores: %d\n\n", //VARIAVEL);
 
     fclose(ficheiro);
 }

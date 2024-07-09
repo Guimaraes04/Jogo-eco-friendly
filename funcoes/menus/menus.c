@@ -83,7 +83,7 @@ void abrirMenu()
                 system("cls");
                 printf("------------------------ MENU ------------------------\n\n");
                 printf("1) > Jogadores\n");
-                printf("2) > Séries\n");
+                // printf("2) > Séries\n");
                 printf("3) > Perguntas\n");
                 printf("4) > Jogo\n");
                 printf("0) > Sair");
@@ -127,19 +127,19 @@ void abrirMenu()
                     } while (menuAdminJogadores != 0);
                     break;
 
-                case 2:
-                    do
-                    {
-                        system("cls");
-                        printf("------------------------ MENU ------------------------\n\n");
-                        printf("2) > Listar séries\n");
-                        printf("0) > Sair");
-                        printf("\n\n--> ");
-                        scanf("%d", &menuAdminSeries);
-                    }
-                    while (menuAdminSeries != 0);
+                // case 2:
+                //     do
+                //     {
+                //         system("cls");
+                //         printf("------------------------ MENU ------------------------\n\n");
+                //         printf("2) > Listar séries\n");
+                //         printf("0) > Sair");
+                //         printf("\n\n--> ");
+                //         scanf("%d", &menuAdminSeries);
+                //     }
+                //     while (menuAdminSeries != 0);
 
-                    break;
+                //     break;
 
                 case 3:
                     do

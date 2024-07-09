@@ -9,6 +9,7 @@ typedef enum tipo_de_pergunta {
 typedef struct serie {
     int numero_da_serie, numero_de_perguntas;
     Tipo_Pergunta tipo;
+    int pontuacao_resposta;
     struct serie *anterior;
     struct serie *proximo;
 } Serie;

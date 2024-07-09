@@ -4,6 +4,7 @@ typedef struct jogador
 {
     Utilizadores *info;
     int numPerguntasRespondidas;
+    int pontuacao;
 } Jogadores;
 
 int compararPorNome(void *a, void *b);
